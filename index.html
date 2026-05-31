@@ -711,6 +711,17 @@
     .p-head{background:#f5f5f5!important;color:#333!important;border-color:#ddd!important}
     table.htbl th{background:#1B3A6B!important}
   }
+  .stat-box{background:var(--bg-2);border:1px solid var(--line);border-radius:8px;padding:14px 16px}
+  .stat-label{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-3);margin-bottom:6px}
+  .stat-val{font-family:var(--mono);font-size:22px;font-weight:700;color:var(--acc);margin-bottom:4px}
+  .stat-sub{font-size:11px;color:var(--ink-3);line-height:1.4}
+  .bridge-tbl{width:100%;border-collapse:collapse;font-size:12px;margin-top:4px}
+  .bridge-tbl th{text-align:left;padding:8px 12px;font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-3);border-bottom:1px solid var(--line);font-weight:500}
+  .bridge-tbl td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.5}
+  .bridge-tbl tr:last-child td{border-bottom:none}
+  .bridge-tbl td:first-child{color:var(--ink-2);width:52%}
+  .bridge-tbl td:last-child{color:var(--acc);font-family:var(--mono);font-size:11px}
+  .bridge-tbl tr:hover td{background:rgba(94,234,212,.04)}
 </style>
 </head>
 <body>
@@ -908,8 +919,14 @@
         <p style="font-family:var(--serif);font-size:22px;line-height:1.5;color:var(--ink);margin-bottom:18px;font-style:normal">
           Stefan Stefanov's €700,000 represents proceeds from a successful business exit — <span style="color:var(--acc)">EV charging station maintenance, Germany</span>. This portfolio is the <em style="color:var(--ink-2)">structured counterpart</em> to event-driven liquidity.
         </p>
-        <p style="color:var(--ink-2);font-size:14px;line-height:1.7">
+        <p style="color:var(--ink-2);font-size:14px;line-height:1.7;margin-bottom:14px">
           €700,000 is deployed across <b style="color:var(--ink)">four asset classes and thirteen UCITS-compliant instruments</b> to preserve post-exit capital, sustain a lifestyle-maintaining retirement, and compound independently over a 20–28 year horizon. Every allocation decision is governed by a written Investment Policy Statement that explicitly counters five documented behavioral biases.
+        </p>
+        <p style="color:var(--ink-2);font-size:14px;line-height:1.7;margin-bottom:14px">
+          The deployment timing is deliberate. The <b style="color:var(--ink)">ECB's active rate-cutting cycle</b> (4.0% → 2.5% through 2026) justifies extending fixed-income duration now, capturing bond price appreciation as yields fall. <b style="color:var(--ink)">Confirmed Eurozone disinflation</b> (CPI 2.2%, down from 10.6% peak) supports equity valuations without the inflationary discount of 2022–2023. Bulgaria's <b style="color:var(--ink)">Eurozone accession in 2026</b> eliminates residual BGN/EUR currency risk — every instrument in this portfolio is EUR-denominated.
+        </p>
+        <p style="color:var(--ink-2);font-size:14px;line-height:1.7">
+          Stefan is practical, analytical, and disciplined — the same traits that built a successful business. <em style="color:var(--ink)">A practical investor doesn't speculate; an analytical mind demands evidence over narrative; a disciplined investor holds rules above emotions.</em> This portfolio is engineered to match his personality: low-cost, passive, rules-governed, and built to survive the behavioral biases that derail most individual investors.
         </p>
       </div>
     </div>
@@ -922,6 +939,63 @@
       <div class="proj-meta">
         <div class="leg"><span class="sw" style="background:var(--acc);height:2px"></span>Stefan Stefanov Portfolio <span class="dv">·</span><span style="color:var(--acc)" class="num">+7.2% YTD</span></div>
         <div class="leg"><span class="sw" style="background:var(--ink-3);height:2px;border-top:2px dashed var(--ink-3)"></span>Benchmark 60/40 <span class="dv">·</span><span style="color:var(--ink-3)" class="num">+5.8% YTD</span></div>
+      </div>
+    </div>
+    <div class="panel fade" style="margin-top:16px">
+      <div class="p-head">
+        <div><span class="ix">01.3</span>2026 MACRO ENVIRONMENT</div>
+        <div class="right"><span>IMF · ECB · IEA</span><span>·</span><span>AS OF MAY 2026</span></div>
+      </div>
+      <div class="p-body">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-bottom:20px">
+          <div class="stat-box">
+            <div class="stat-label">Global GDP Growth</div>
+            <div class="stat-val">3.1%</div>
+            <div class="stat-sub">IMF 2026 forecast · US 2.2% · Eurozone 0.9% · EM 4.1%</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-label">ECB Deposit Rate</div>
+            <div class="stat-val">2.50%</div>
+            <div class="stat-sub">Cutting cycle: 4.0% → 2.5% · Dovish pivot confirmed</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-label">Eurozone CPI</div>
+            <div class="stat-val">2.2%</div>
+            <div class="stat-sub">Down from 10.6% peak (2022) · Disinflation trend intact</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-label">Bulgaria 2026</div>
+            <div class="stat-val">EUR Zone</div>
+            <div class="stat-sub">Eurozone accession · Lev–Euro conversion · ECB framework access</div>
+          </div>
+        </div>
+        <p style="color:var(--ink-2);font-size:13px;line-height:1.7;margin-bottom:12px">
+          <b style="color:var(--ink)">Geopolitical environment:</b> The Russia-Ukraine conflict has structurally accelerated Europe's clean energy transition — reducing fossil-fuel dependency and creating sustained demand for energy infrastructure investment. US-China tech decoupling reinforces the case for emerging-market supply-chain diversification (EIMI). Middle East tensions create residual oil-price tail risk, partially countered by INFR's energy-infrastructure revenue base. Global defense spending is rising across NATO members, supporting European equity earnings.
+        </p>
+        <p style="color:var(--ink-2);font-size:13px;line-height:1.7">
+          <b style="color:var(--ink)">Energy transition tailwind:</b> Global clean energy investment exceeded €1 trillion in 2025 (IEA), driven by the EU Green Deal, US Inflation Reduction Act spillovers, and accelerating EV adoption across Central Europe. Stefan's professional background in EV charging infrastructure gives him first-hand insight into this structural shift — making INFR and SAWD's ESG screen natural conviction positions, not passive allocations.
+        </p>
+      </div>
+    </div>
+    <div class="panel fade" style="margin-top:16px">
+      <div class="p-head">
+        <div><span class="ix">01.4</span>MACRO → PORTFOLIO BRIDGE</div>
+        <div class="right"><span>8 THEMES</span><span>·</span><span>13 INSTRUMENTS MAPPED</span></div>
+      </div>
+      <div class="p-body">
+        <table class="bridge-tbl">
+          <thead><tr><th>Macro Theme (2026)</th><th>Portfolio Response</th></tr></thead>
+          <tbody>
+            <tr><td>ECB rate cuts → falling EUR yields</td><td>IEGY duration extension justified · IEBC spread compression expected</td></tr>
+            <tr><td>Disinflation + real earnings growth</td><td>Equities 55% warranted · IWDA global core at 25%</td></tr>
+            <tr><td>Energy transition acceleration</td><td>INFR (infrastructure revenue uplift) · ESG tilt via SAWD</td></tr>
+            <tr><td>Bulgaria → Eurozone accession 2026</td><td>All EUR-denominated · BULGAR Eurobond strategic hold</td></tr>
+            <tr><td>US tech leadership + AI investment cycle</td><td>XDWT capped at 5% — conviction with overconfidence guard</td></tr>
+            <tr><td>EM growth recovery (Asia/India)</td><td>EIMI 8% exposure · supply-chain diversification theme</td></tr>
+            <tr><td>Residual inflation + housing pressure</td><td>INFR + IWDP as real-asset inflation hedges (7% total)</td></tr>
+            <tr><td>Geopolitical uncertainty / volatility</td><td>IHYG capped at 5% · MMF 3% behavioral anchor</td></tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
@@ -997,6 +1071,30 @@
       <div class="s-num">§ 03 / 07</div>
       <div class="s-title">Asset <em>allocation</em></div>
       <div class="s-side">INTERACTIVE · drag sliders<span class="v">LIVE-LINKED</span></div>
+    </div>
+    <div class="panel fade" style="margin-bottom:24px">
+      <div class="p-head">
+        <div><span class="ix">03.0</span>ALLOCATION RATIONALE</div>
+        <div class="right"><span>WHY 55 / 35 / 7 / 3</span><span>·</span><span>MACRO + BEHAVIORAL</span></div>
+      </div>
+      <div class="p-body" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px">
+        <div>
+          <div style="font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:var(--acc);margin-bottom:8px;font-family:var(--mono)">55% Equities — Growth Engine</div>
+          <p style="color:var(--ink-2);font-size:13px;line-height:1.7">Stefan is <b style="color:var(--ink)">37 with a 20–28 year horizon</b> — the equity risk premium is the single most powerful compounding lever available over this timeframe. At a 6.0–6.5% return target, fixed income alone cannot close the gap. The ECB's dovish pivot and confirmed disinflation make 2026 an equity-supportive entry point. The 55% ceiling is set by the IPS's −22% max drawdown constraint — consistent with historical 55/45 portfolio drawdowns.</p>
+        </div>
+        <div>
+          <div style="font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:var(--cyan);margin-bottom:8px;font-family:var(--mono)">35% Fixed Income — Behavioral Anchor</div>
+          <p style="color:var(--ink-2);font-size:13px;line-height:1.7">Kahneman &amp; Tversky (1979) demonstrated that losses feel 2× more painful than equivalent gains. A bond allocation dampens portfolio volatility enough to <b style="color:var(--ink)">prevent panic selling</b> during equity drawdowns. The 35% is structured across 4 sub-buckets: sovereign safety (IEGY 12%), IG credit yield pick-up (IEBC 10%), capped high-yield alpha (IHYG 5%), and rate-risk buffer (CSH2 4%). Bulgaria's Eurozone accession makes BULGAR (4%) strategically anchored — ECB membership removes sovereign spread risk.</p>
+        </div>
+        <div>
+          <div style="font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:var(--warn);margin-bottom:8px;font-family:var(--mono)">7% Real Assets — Inflation Hedge</div>
+          <p style="color:var(--ink-2);font-size:13px;line-height:1.7">Eurozone CPI has fallen to 2.2% but <b style="color:var(--ink)">structural inflation pressures persist</b> — energy transition costs, housing supply deficits, defence spending. Infrastructure (INFR 4%) provides revenue linked to inflation via regulated utility contracts. Stefan's EV charging background makes INFR a <em>conviction position</em> — he understands the business model. REIT exposure (IWDP 3%) adds property inflation-linkage without the illiquidity of direct ownership.</p>
+        </div>
+        <div>
+          <div style="font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:var(--ink-3);margin-bottom:8px;font-family:var(--mono)">3% Cash (MMF) — Behavioral Reserve</div>
+          <p style="color:var(--ink-2);font-size:13px;line-height:1.7">The MMF 3% (€21,000) is not idle capital — it is <b style="color:var(--ink)">pre-committed behavioral architecture</b>. Dr. Ivanchev's framework: pre-agreed rules prevent in-the-moment panic decisions. This pocket covers Stefan's annual Alps trip and lifestyle costs for 12+ months, ensuring he never needs to sell equities at a low to fund routine expenses. Zero-reason selling is the #1 retail investor wealth destroyer.</p>
+        </div>
+      </div>
     </div>
     <div class="alloc-grid fade">
       <div class="ring-wrap">
@@ -1224,17 +1322,17 @@
             </tr>
           </thead>
           <tbody>
-            <tr data-c="eq" data-tk="IWDA"><td class="num">01</td><td class="nm">iShares MSCI World UCITS ETF</td><td class="tk">IWDA</td><td><span class="cls-pill cls-eq">EQ</span></td><td class="r wt">25.0%<span class="wt-bar" style="--w:100%"></span></td><td class="r eur">€175,000</td><td class="r ter">0.20%</td><td class="r"><div class="spark-cell"><span class="row-chg up" id="chg-IWDA">+0.34%</span><canvas class="row-spark" id="sp-IWDA" width="60" height="22"></canvas></div></td><td class="note">Core diversification — antidote to business concentration</td></tr>
-            <tr data-c="eq" data-tk="EXW1"><td class="num">02</td><td class="nm">iShares Core EURO STOXX 50 ETF</td><td class="tk">EXW1</td><td><span class="cls-pill cls-eq">EQ</span></td><td class="r wt">10.0%<span class="wt-bar" style="--w:40%"></span></td><td class="r eur">€70,000</td><td class="r ter">0.10%</td><td class="r"><div class="spark-cell"><span class="row-chg up" id="chg-EXW1">+0.18%</span><canvas class="row-spark" id="sp-EXW1" width="60" height="22"></canvas></div></td><td class="note">Eurozone tilt; aligned with post-accession narrative</td></tr>
-            <tr data-c="eq" data-tk="EIMI"><td class="num">03</td><td class="nm">iShares MSCI Emerging Markets ETF</td><td class="tk">EIMI</td><td><span class="cls-pill cls-eq">EQ</span></td><td class="r wt">8.0%<span class="wt-bar" style="--w:32%"></span></td><td class="r eur">€56,000</td><td class="r ter">0.18%</td><td class="r"><div class="spark-cell"><span class="row-chg dn" id="chg-EIMI">−0.22%</span><canvas class="row-spark" id="sp-EIMI" width="60" height="22"></canvas></div></td><td class="note">AI/tech tailwinds — aligned with global technology growth trends</td></tr>
-            <tr data-c="eq" data-tk="SAWD"><td class="num">04</td><td class="nm">iShares MSCI World ESG Screened ETF <span class="esg-tag">ESG</span></td><td class="tk">SAWD</td><td><span class="cls-pill cls-eq">EQ</span></td><td class="r wt">7.0%<span class="wt-bar" style="--w:28%"></span></td><td class="r eur">€49,000</td><td class="r ter">0.20%</td><td class="r"><div class="spark-cell"><span class="row-chg up" id="chg-SAWD">+0.41%</span><canvas class="row-spark" id="sp-SAWD" width="60" height="22"></canvas></div></td><td class="note">Honors ESG values — near-zero tracking-error vs. parent index</td></tr>
-            <tr data-c="eq" data-tk="XDWT"><td class="num">05</td><td class="nm">Xtrackers MSCI World Info Tech ETF</td><td class="tk">XDWT</td><td><span class="cls-pill cls-eq">EQ</span></td><td class="r wt">5.0%<span class="wt-bar" style="--w:20%"></span></td><td class="r eur">€35,000</td><td class="r ter">0.25%</td><td class="r"><div class="spark-cell"><span class="row-chg up" id="chg-XDWT">+0.87%</span><canvas class="row-spark" id="sp-XDWT" width="60" height="22"></canvas></div></td><td class="note">Tech conviction — capped vs. overconfidence bias</td></tr>
+            <tr data-c="eq" data-tk="IWDA"><td class="num">01</td><td class="nm">iShares MSCI World UCITS ETF</td><td class="tk">IWDA</td><td><span class="cls-pill cls-eq">EQ</span></td><td class="r wt">25.0%<span class="wt-bar" style="--w:100%"></span></td><td class="r eur">€175,000</td><td class="r ter">0.20%</td><td class="r"><div class="spark-cell"><span class="row-chg up" id="chg-IWDA">+0.34%</span><canvas class="row-spark" id="sp-IWDA" width="60" height="22"></canvas></div></td><td class="note">Core equity (25%) — ECB rate cut + disinflation tailwind · antidote to single-business concentration</td></tr>
+            <tr data-c="eq" data-tk="EXW1"><td class="num">02</td><td class="nm">iShares Core EURO STOXX 50 ETF</td><td class="tk">EXW1</td><td><span class="cls-pill cls-eq">EQ</span></td><td class="r wt">10.0%<span class="wt-bar" style="--w:40%"></span></td><td class="r eur">€70,000</td><td class="r ter">0.10%</td><td class="r"><div class="spark-cell"><span class="row-chg up" id="chg-EXW1">+0.18%</span><canvas class="row-spark" id="sp-EXW1" width="60" height="22"></canvas></div></td><td class="note">Eurozone tilt — ECB cutting cycle + Bulgaria post-accession EUR convergence trade</td></tr>
+            <tr data-c="eq" data-tk="EIMI"><td class="num">03</td><td class="nm">iShares MSCI Emerging Markets ETF</td><td class="tk">EIMI</td><td><span class="cls-pill cls-eq">EQ</span></td><td class="r wt">8.0%<span class="wt-bar" style="--w:32%"></span></td><td class="r eur">€56,000</td><td class="r ter">0.18%</td><td class="r"><div class="spark-cell"><span class="row-chg dn" id="chg-EIMI">−0.22%</span><canvas class="row-spark" id="sp-EIMI" width="60" height="22"></canvas></div></td><td class="note">EM recovery — Asia/India supply-chain diversification · US-China decoupling beneficiary</td></tr>
+            <tr data-c="eq" data-tk="SAWD"><td class="num">04</td><td class="nm">iShares MSCI World ESG Screened ETF <span class="esg-tag">ESG</span></td><td class="tk">SAWD</td><td><span class="cls-pill cls-eq">EQ</span></td><td class="r wt">7.0%<span class="wt-bar" style="--w:28%"></span></td><td class="r eur">€49,000</td><td class="r ter">0.20%</td><td class="r"><div class="spark-cell"><span class="row-chg up" id="chg-SAWD">+0.41%</span><canvas class="row-spark" id="sp-SAWD" width="60" height="22"></canvas></div></td><td class="note">ESG screen — energy transition alignment · near-zero tracking error vs. MSCI World parent</td></tr>
+            <tr data-c="eq" data-tk="XDWT"><td class="num">05</td><td class="nm">Xtrackers MSCI World Info Tech ETF</td><td class="tk">XDWT</td><td><span class="cls-pill cls-eq">EQ</span></td><td class="r wt">5.0%<span class="wt-bar" style="--w:20%"></span></td><td class="r eur">€35,000</td><td class="r ter">0.25%</td><td class="r"><div class="spark-cell"><span class="row-chg up" id="chg-XDWT">+0.87%</span><canvas class="row-spark" id="sp-XDWT" width="60" height="22"></canvas></div></td><td class="note">AI/tech cycle conviction — US tech leadership 2026 · hard-capped at 5% vs. overconfidence bias</td></tr>
             <tr data-c="fi" data-tk="IEGY"><td class="num">06</td><td class="nm">iShares € Govt Bond 7–10yr ETF</td><td class="tk">IEGY</td><td><span class="cls-pill cls-fi">FI</span></td><td class="r wt">12.0%<span class="wt-bar" style="--w:48%"></span></td><td class="r eur">€84,000</td><td class="r ter">0.09%</td><td class="r"><div class="spark-cell"><span class="row-chg dn" id="chg-IEGY">−0.05%</span><canvas class="row-spark" id="sp-IEGY" width="60" height="22"></canvas></div></td><td class="note">Equity shock absorber — highest-quality EUR safety</td></tr>
             <tr data-c="fi" data-tk="IEBC"><td class="num">07</td><td class="nm">iShares € Corporate Bond ETF</td><td class="tk">IEBC</td><td><span class="cls-pill cls-fi">FI</span></td><td class="r wt">10.0%<span class="wt-bar" style="--w:40%"></span></td><td class="r eur">€70,000</td><td class="r ter">0.20%</td><td class="r"><div class="spark-cell"><span class="row-chg up" id="chg-IEBC">+0.02%</span><canvas class="row-spark" id="sp-IEBC" width="60" height="22"></canvas></div></td><td class="note">+0.8–1.2% yield premium · 700+ issuers</td></tr>
             <tr data-c="fi" data-tk="IHYG"><td class="num">08</td><td class="nm">iShares € High Yield Corp Bond ETF</td><td class="tk">IHYG</td><td><span class="cls-pill cls-fi">FI</span></td><td class="r wt">5.0%<span class="wt-bar" style="--w:20%"></span></td><td class="r eur">€35,000</td><td class="r ter">0.50%</td><td class="r"><div class="spark-cell"><span class="row-chg dn" id="chg-IHYG">−0.14%</span><canvas class="row-spark" id="sp-IHYG" width="60" height="22"></canvas></div></td><td class="note">Yield accelerator 5–7% · capped at 5%</td></tr>
-            <tr data-c="fi" data-tk="BULGAR34"><td class="num">09</td><td class="nm">Bulgaria Republic Eurobond 3.125% '34</td><td class="tk">BULGAR</td><td><span class="cls-pill cls-fi">FI</span></td><td class="r wt">4.0%<span class="wt-bar" style="--w:16%"></span></td><td class="r eur">€28,000</td><td class="r ter">—</td><td class="r"><div class="spark-cell"><span class="row-chg up" id="chg-BULGAR34">+0.15%</span><canvas class="row-spark" id="sp-BULGAR34" width="60" height="22"></canvas></div></td><td class="note">Patriotic conviction · matures aligned with horizon</td></tr>
+            <tr data-c="fi" data-tk="BULGAR34"><td class="num">09</td><td class="nm">Bulgaria Republic Eurobond 3.125% '34</td><td class="tk">BULGAR</td><td><span class="cls-pill cls-fi">FI</span></td><td class="r wt">4.0%<span class="wt-bar" style="--w:16%"></span></td><td class="r eur">€28,000</td><td class="r ter">—</td><td class="r"><div class="spark-cell"><span class="row-chg up" id="chg-BULGAR34">+0.15%</span><canvas class="row-spark" id="sp-BULGAR34" width="60" height="22"></canvas></div></td><td class="note">Bulgaria Eurozone accession 2026 — sovereign spread removal · 3.125% coupon · matures 2034</td></tr>
             <tr data-c="fi" data-tk="CSH2"><td class="num">10</td><td class="nm">Amundi Euro Short Duration Bond ETF</td><td class="tk">CSH2</td><td><span class="cls-pill cls-fi">FI</span></td><td class="r wt">4.0%<span class="wt-bar" style="--w:16%"></span></td><td class="r eur">€28,000</td><td class="r ter">0.07%</td><td class="r"><div class="spark-cell"><span class="row-chg up" id="chg-CSH2">+0.01%</span><canvas class="row-spark" id="sp-CSH2" width="60" height="22"></canvas></div></td><td class="note">Duration buffer — shields vs. rate risk</td></tr>
-            <tr data-c="ra" data-tk="INFR"><td class="num">11</td><td class="nm">iShares Global Infrastructure ETF</td><td class="tk">INFR</td><td><span class="cls-pill cls-ra">RA</span></td><td class="r wt">4.0%<span class="wt-bar" style="--w:16%"></span></td><td class="r eur">€28,000</td><td class="r ter">0.65%</td><td class="r"><div class="spark-cell"><span class="row-chg up" id="chg-INFR">+0.11%</span><canvas class="row-spark" id="sp-INFR" width="60" height="22"></canvas></div></td><td class="note">Inflation-linked revenues — aligned with Stefan's infrastructure business background</td></tr>
+            <tr data-c="ra" data-tk="INFR"><td class="num">11</td><td class="nm">iShares Global Infrastructure ETF</td><td class="tk">INFR</td><td><span class="cls-pill cls-ra">RA</span></td><td class="r wt">4.0%<span class="wt-bar" style="--w:16%"></span></td><td class="r eur">€28,000</td><td class="r ter">0.65%</td><td class="r"><div class="spark-cell"><span class="row-chg up" id="chg-INFR">+0.11%</span><canvas class="row-spark" id="sp-INFR" width="60" height="22"></canvas></div></td><td class="note">Energy transition infrastructure — Stefan&apos;s EV industry insight · inflation-linked utility revenues</td></tr>
             <tr data-c="ra" data-tk="IWDP"><td class="num">12</td><td class="nm">iShares Dev. Markets Property Yield ETF</td><td class="tk">IWDP</td><td><span class="cls-pill cls-ra">RA</span></td><td class="r wt">3.0%<span class="wt-bar" style="--w:12%"></span></td><td class="r eur">€21,000</td><td class="r ter">0.59%</td><td class="r"><div class="spark-cell"><span class="row-chg dn" id="chg-IWDP">−0.08%</span><canvas class="row-spark" id="sp-IWDP" width="60" height="22"></canvas></div></td><td class="note">Liquid REIT exposure — inflation hedge sans illiquidity</td></tr>
             <tr data-c="ca" data-tk="MMF"><td class="num">13</td><td class="nm">EUR Money Market Fund</td><td class="tk">MMF</td><td><span class="cls-pill cls-ca">CA</span></td><td class="r wt">3.0%<span class="wt-bar" style="--w:12%"></span></td><td class="r eur">€21,000</td><td class="r ter">~0.05%</td><td class="r"><div class="spark-cell"><span class="row-chg up" id="chg-MMF">+0.01%</span><canvas class="row-spark" id="sp-MMF" width="60" height="22"></canvas></div></td><td class="note">Behavioral anchor · prevents panic-selling in volatility</td></tr>
           </tbody>
@@ -1708,6 +1806,7 @@
         <p>Stefan Stefanov's portfolio is built on three pillars any serious financial professional will recognise as the hallmarks of <span class="pillar">disciplined diversification</span>, <span class="pillar">behavioral finance awareness</span>, and <span class="pillar">long-term thinking anchored in personal values</span>.</p>
         <p>The €700,000 mandate deploys across <b>13 UCITS-compliant instruments at 0.22% per annum</b> — meaning Stefan retains 99.78% of gross returns annually, compounding silently and powerfully over two decades.</p>
         <p>This is not a portfolio designed to beat the market through clever prediction. It is designed to <b>match Stefan's goals precisely, survive his behavioral impulses with structured rules, and compound quietly for 26+ years</b> — because the investor who stays invested, wins.</p>
+        <p>The 2026 macro environment validated the deployment timing: the <b>ECB's dovish pivot</b> created a rare window to extend fixed-income duration and capture bond price appreciation as yields fall; <b>confirmed Eurozone disinflation</b> removed the 2022–2023 valuation headwind from equities; and <b>Bulgaria's Eurozone accession</b> eliminated residual currency risk for the entire portfolio. Stefan's EV charging background — built during Europe's first infrastructure investment supercycle — positions him to recognise the second one as it unfolds.</p>
       </div>
       <div class="quote">
         <div class="qm">"</div>
