@@ -21,6 +21,8 @@
 | `be98b5b` | May 31 | README.md |
 | `34593db` | May 31 | `vercel.json` deployment config |
 | `f74a378` | Jun 1  | **Macroeconomic analysis + allocation rationale** |
+| `6ed9cc7` | Jun 1  | CHANGELOG.md |
+| `62a0778` | Jun 1  | **§03.4 Sector & sub-asset allocation charts** |
 
 ---
 
@@ -360,6 +362,63 @@ New paragraph added before Graham quote:
 
 ---
 
+## Phase 5 — Sector & Sub-Asset Allocation Charts (Jun 1 · commit `62a0778`)
+
+The PRD requires the portfolio allocation to be "visually presented" showing **asset allocation, sector allocation, and respective weights**. The existing §03.1 doughnut only covered the top-level 4-class split. This phase adds the missing sector and fixed-income breakdown charts.
+
+### §03.4 — New Panel: "SECTOR & SUB-ASSET ALLOCATION"
+
+Two side-by-side doughnut charts inserted before the §03.5 20-year projection panel.
+
+**Left chart — `sectorChart` (Equity Sector Breakdown)**
+
+Blended look-through across all 5 equity ETFs (IWDA 25%, EXW1 10%, EIMI 8%, SAWD 7%, XDWT 5%) against the 55% equity sleeve (€385,000):
+
+| Sector | % of Equities | EUR Value |
+|---|---|---|
+| Technology | 28% | €107,800 |
+| Financials | 17% | €65,450 |
+| Healthcare | 12% | €46,200 |
+| Industrials | 11% | €42,350 |
+| Consumer Discretionary | 10% | €38,500 |
+| Consumer Staples | 7% | €26,950 |
+| Communication Services | 7% | €26,950 |
+| Energy | 4% | €15,400 |
+| Materials | 3% | €11,550 |
+| Other / Utilities | 1% | €3,850 |
+
+Technology weight elevated to 28% because XDWT (5% of portfolio) is 100% technology, boosting the blended sector tilt above the MSCI World baseline of ~24%.
+
+**Right chart — `fiChart` (Fixed Income Sub-Allocation)**
+
+Breakdown of the 35% fixed income sleeve (€245,000) by instrument bucket:
+
+| Bucket | Instrument | % of FI | EUR Value |
+|---|---|---|---|
+| Government Bonds | IEGY | 34% | €84,000 |
+| IG Corporate | IEBC | 29% | €70,000 |
+| High Yield | IHYG | 14% | €35,000 |
+| Bulgaria Sovereign | BULGAR | 11% | €28,000 |
+| Short Duration | CSH2 | 11% | €28,000 |
+
+**Implementation details**
+- Both charts use `type:'doughnut'` with `cutout:'62%'`
+- Each wrapped in `try/catch` to match existing chart error handling pattern
+- HTML legends use a 4-column CSS grid: color swatch · name · weight % · EUR value
+- Hover tooltips show label + percentage (Chart.js callback)
+- Charts initialized immediately after the `ring` doughnut chart in the JS block
+
+**PRD requirement now fully met:**
+
+| Requirement | Before | After |
+|---|---|---|
+| Asset allocation (pie chart) | ✅ §03.1 doughnut | ✅ |
+| Sector allocation (pie chart) | ❌ missing | ✅ §03.4 equity sector doughnut |
+| Sub-asset allocation | ❌ missing | ✅ §03.4 fixed income breakdown doughnut |
+| Portfolio weights visible | ✅ §03.1 legend | ✅ both new charts include % + EUR legends |
+
+---
+
 ## Repository Structure
 
 ```
@@ -380,4 +439,4 @@ Ivan-Petrov-Portfolio/
 
 ---
 
-*Last updated: June 1, 2026 · SSP-26-001*
+*Last updated: June 1, 2026 · SSP-26-001 · commit `62a0778`*
